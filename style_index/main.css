@@ -1,0 +1,149 @@
+#section{
+    background-color: #f2f1ea;
+    position: relative;
+}
+/* thêm hàng hóa */
+#section .event-additem{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    background: none;
+    border: 0.5px solid black;
+    right: 0;
+    top:0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section .add-card-item{
+    height: 100vh;
+    width: 0;
+    background-color: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    overflow: hidden;
+    transition: 1s;
+    
+}
+#section .add-card-item input{
+    margin-bottom: 10px;
+}
+#section .close-eventadditem{
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+}
+/* end hàng hóa */
+#section .card{
+    position: relative;
+}
+#section .card .admin{
+    top: 3%;
+    right: 3%;
+}
+#section .card .bg-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 0.5px solid #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+#section .container-fluid{
+    padding: 40px;
+}
+#section .container-fluid .card{
+    background: #fff;
+    border:none;
+}
+#section .col-6{
+    margin-bottom: 20px;
+}
+#section .container-fluid .img-item{
+    height: 207.33px;
+}
+
+/* infor */
+#section .infor{
+    background-image: url(/imgs/flowers2.jpg);
+    padding: 30px;
+    color: #000;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#section .infor::after{
+    background-color: rgb(94, 89, 41);
+    content:'';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.9;
+}
+#section .infor-text{
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #fff;
+    width: 90%;
+    height: 80%;
+    z-index: 999;
+}
+
+#section .infor,
+#section .infor::after,
+#section .infor-text,
+#section .btn{
+    border-radius: 10px;
+}
+
+@media screen and (min-width:1024px) and (max-width: 1920px) {
+    #section .col-mobile{
+        display: none;
+    }
+    #section .card-bottom-mobile{
+        display: none;
+    }
+   
+    #section .col-desktop .infor{
+        height: 349.33px;
+    }
+    #section .col-desktop .infor .infor-text{
+        width: 90%;
+        height: 90%;
+    }
+    #section .card-bottom-desktop{
+        flex-direction: row;   
+    }
+}
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+    
+}
+@media screen and (max-width: 740px){
+    #section .col-desktop{
+        display: none;
+    }
+    #section .col-mobile{
+        margin-bottom: 30px;
+    }
+    #section .card-bottom-mobile{
+        display: none;
+    }
+}
